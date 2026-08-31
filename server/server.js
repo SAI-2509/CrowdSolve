@@ -55,7 +55,9 @@ const preferredPort = Number(process.env.PORT) || 5000;
 const maxPortRetries = 10;
 
 const startServer = (port, retriesLeft = maxPortRetries) => {
-  const server = app.listen(port, "127.0.0.1", () => {
+  // 0.0.0.0 is required by hosting providers such as Render and also works
+  // locally through http://localhost or http://127.0.0.1.
+  const server = app.listen(port, "0.0.0.0", () => {
     console.log(`CrowdSolve API running on port ${port}`);
   });
 
@@ -72,11 +74,11 @@ const startServer = (port, retriesLeft = maxPortRetries) => {
   });
 };
 
-connectDatabase()
-  .then(() => {
-    startServer(preferredPort);
-  })
-  .catch((error) => {
-    console.error("Database connection failed:", error.message);
-    process.exit(1);
-  });
+// Start the HTTP API independently of MongoDB. This keeps the health endpoint
+// reachable and provides a clear database error instead of making the whole
+// backend appear offline while a remote database connection is pending.
+startServer(preferredPort);
+
+connectDatabase().catch((error) => {
+  console.error("Database connection failed:", error.message);
+});
