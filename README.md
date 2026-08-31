@@ -2,13 +2,9 @@
 
 CrowdSolve is a full-stack smart city platform that helps citizens report civic issues, lets communities upvote local problems, and helps authorities prioritize action using an AI-inspired urgency score.
 
-## Stack
+# Overview
 
-- Frontend: React + Vite + Tailwind CSS
-- Backend: Node.js + Express
-- Database: MongoDB + Mongoose
-- Auth: JWT
-- Maps: Google Maps JavaScript API ready integration
+CrowdSolve connects citizens and local authorities through one digital platform. Users can report issues such as damaged roads, garbage collection problems, water leaks, streetlight failures, and public safety concerns. The system ranks issues using an urgency score based on category, votes, and time.
 
 ## Features
 
@@ -24,9 +20,34 @@ CrowdSolve is a full-stack smart city platform that helps citizens report civic 
 
 ```text
 CrowdSolve/
-  client/   # React frontend
-  server/   # Express API
-```
+│
+├── client/                     
+│   ├── src/
+│   │   ├── components/         
+│   │   ├── hooks/            
+│   │   ├── pages/              
+│   │   ├── utils/              
+│   │   ├── App.jsx             
+│   │   └── main.jsx            
+│   ├── .env.example           
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/                     
+│   ├── config/                
+│   ├── controllers/           
+│   ├── middleware/             
+│   ├── models/                 
+│   ├── routes/                 
+│   ├── services/              
+│   ├── uploads/               
+│   ├── .env.example            
+│   ├── server.js              
+│   └── package.json
+│
+├── package.json                
+├── package-lock.json
+└── README.md
 
 ## Quick Start
 
@@ -54,28 +75,25 @@ CrowdSolve/
 - Frontend: `http://localhost:5173`
 - API: `http://localhost:5000/api`
 
-## Environment Variables
+:
+## Stack
 
-### Server
+- Frontend: React + Vite + Tailwind CSS
+- Backend: Node.js + Express
+- Database: MongoDB + Mongoose
+- Auth: JWT
+- Maps: Google Maps JavaScript API ready integration
 
-- `PORT`
-- `MONGODB_URI`
-- `JWT_SECRET`
-- `CLIENT_URL`
-- `UPLOADS_BASE_URL`
-- `AUTHORITY_THRESHOLD_VOTES`
+## Impact
 
-### Client
+CrowdSolve helps make civic issue reporting more transparent, organized, and community-driven. Citizens can make their voices heard, while authorities receive data-driven priorities instead of unstructured complaints. This can improve response time, encourage public participation, and support smarter urban governance.
 
-- `VITE_API_URL`
-- `VITE_GOOGLE_MAPS_API_KEY`
+## Future Improvements
 
-## AI Urgency Scoring
-
-CrowdSolve computes a score using:
-
-```text
-Score = (Votes * 0.4) + (CategoryWeight * 0.4) + (TimeElapsed * 0.2)
-```
-
-The backend normalizes time into a capped age score so unresolved, high-impact issues naturally rise in priority.
+- Real-time notifications
+- Google Maps issue visualization
+- Image storage using Cloudinary or AWS S3
+- Role-based authority management
+- Analytics and reporting dashboard
+- Mobile application
+- AI-based image classification for issue categories
