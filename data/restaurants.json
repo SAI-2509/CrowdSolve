@@ -1,0 +1,22 @@
+[
+  {"city":"Goa","name":"Tide and Tandoor","type":"Non Veg","avg_cost":1400,"rating":4.8},
+  {"city":"Goa","name":"Spice Shore","type":"Veg","avg_cost":900,"rating":4.5},
+  {"city":"Jaipur","name":"Marigold Thali House","type":"Veg","avg_cost":700,"rating":4.7},
+  {"city":"Jaipur","name":"Royal Grill Room","type":"Non Veg","avg_cost":1250,"rating":4.6},
+  {"city":"Manali","name":"Snowfire Kitchen","type":"Non Veg","avg_cost":1150,"rating":4.7},
+  {"city":"Manali","name":"Cedar Bowl Cafe","type":"Veg","avg_cost":800,"rating":4.4},
+  {"city":"Udaipur","name":"Lakeview Veg Table","type":"Veg","avg_cost":850,"rating":4.6},
+  {"city":"Udaipur","name":"Sunset Tandoor Deck","type":"Non Veg","avg_cost":1200,"rating":4.5},
+  {"city":"Kochi","name":"Harbor Catch Grill","type":"Non Veg","avg_cost":1250,"rating":4.8},
+  {"city":"Kochi","name":"Malabar Leaf Table","type":"Veg","avg_cost":850,"rating":4.5},
+  {"city":"Munnar","name":"Tea Leaf Bistro","type":"Veg","avg_cost":820,"rating":4.4},
+  {"city":"Munnar","name":"Estate Pepper Pan","type":"Non Veg","avg_cost":1080,"rating":4.5},
+  {"city":"Ooty","name":"Garden Oven","type":"Veg","avg_cost":760,"rating":4.3},
+  {"city":"Ooty","name":"Hill Smoke Kitchen","type":"Non Veg","avg_cost":1020,"rating":4.4},
+  {"city":"Rishikesh","name":"River Sattva Cafe","type":"Veg","avg_cost":650,"rating":4.6},
+  {"city":"Rishikesh","name":"Ghat Grill House","type":"Non Veg","avg_cost":980,"rating":4.3},
+  {"city":"Pondicherry","name":"Cafe Azure Lane","type":"Veg","avg_cost":900,"rating":4.5},
+  {"city":"Pondicherry","name":"Seaside Catch Table","type":"Non Veg","avg_cost":1180,"rating":4.6},
+  {"city":"Srinagar","name":"Kesar Wazwan House","type":"Non Veg","avg_cost":1300,"rating":4.8},
+  {"city":"Srinagar","name":"Shikara Veg Room","type":"Veg","avg_cost":920,"rating":4.5}
+]

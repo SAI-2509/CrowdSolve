@@ -1,0 +1,22 @@
+[
+  {"city":"Goa","name":"Palolem Beach","theme":"Beach","category":"Must Visit","rating":4.8,"popularity_index":95},
+  {"city":"Goa","name":"Dudhsagar Falls","theme":"Nature","category":"Must Visit","rating":4.7,"popularity_index":91},
+  {"city":"Jaipur","name":"Amber Fort","theme":"Culture","category":"Must Visit","rating":4.9,"popularity_index":97},
+  {"city":"Jaipur","name":"Nahargarh Sunset Point","theme":"Sunset","category":"Must Visit","rating":4.6,"popularity_index":86},
+  {"city":"Manali","name":"Solang Valley","theme":"Adventure","category":"Must Visit","rating":4.8,"popularity_index":94},
+  {"city":"Manali","name":"Jogini Falls","theme":"Hiking","category":"Nature","rating":4.6,"popularity_index":87},
+  {"city":"Udaipur","name":"Lake Pichola Sunset Cruise","theme":"Luxury","category":"Must Visit","rating":4.8,"popularity_index":92},
+  {"city":"Udaipur","name":"City Palace Walk","theme":"Culture","category":"Must Visit","rating":4.7,"popularity_index":89},
+  {"city":"Kochi","name":"Fort Kochi Art Walk","theme":"Culture","category":"Must Visit","rating":4.6,"popularity_index":86},
+  {"city":"Kochi","name":"Chinese Fishing Nets","theme":"Sunset","category":"Must Visit","rating":4.5,"popularity_index":82},
+  {"city":"Munnar","name":"Kolukkumalai Tea Estate","theme":"Nature","category":"Must Visit","rating":4.7,"popularity_index":89},
+  {"city":"Munnar","name":"Echo Point","theme":"Nature","category":"Must Visit","rating":4.5,"popularity_index":84},
+  {"city":"Ooty","name":"Botanical Garden","theme":"Nature","category":"Must Visit","rating":4.5,"popularity_index":84},
+  {"city":"Ooty","name":"Ooty Lake Boating","theme":"Relaxed","category":"Must Visit","rating":4.4,"popularity_index":80},
+  {"city":"Rishikesh","name":"Ganga River Rafting","theme":"Adventure","category":"Must Visit","rating":4.8,"popularity_index":93},
+  {"city":"Rishikesh","name":"Laxman Jhula Walk","theme":"Culture","category":"Must Visit","rating":4.5,"popularity_index":84},
+  {"city":"Pondicherry","name":"White Town Promenade","theme":"Sunset","category":"Must Visit","rating":4.6,"popularity_index":85},
+  {"city":"Pondicherry","name":"Auroville Day Trip","theme":"Culture","category":"Must Visit","rating":4.4,"popularity_index":81},
+  {"city":"Srinagar","name":"Dal Lake Shikara Ride","theme":"Luxury","category":"Must Visit","rating":4.8,"popularity_index":95},
+  {"city":"Srinagar","name":"Mughal Garden Circuit","theme":"Nature","category":"Must Visit","rating":4.6,"popularity_index":88}
+]

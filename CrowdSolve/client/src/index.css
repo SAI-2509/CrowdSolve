@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #16324f;
+  background:
+    radial-gradient(circle at top left, rgba(19, 181, 166, 0.22), transparent 32%),
+    radial-gradient(circle at top right, rgba(255, 143, 63, 0.2), transparent 28%),
+    radial-gradient(circle at 50% 30%, rgba(132, 204, 255, 0.22), transparent 25%),
+    linear-gradient(180deg, #f4fffd 0%, #fff7ed 48%, #eef8ff 100%);
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 13px;
+  background-attachment: fixed;
+  color: #16324f;
+  background:
+    radial-gradient(circle at top left, rgba(19, 181, 166, 0.16), transparent 22%),
+    radial-gradient(circle at top right, rgba(255, 143, 63, 0.14), transparent 18%),
+    linear-gradient(180deg, #f6fffd 0%, #eef7ff 55%, #fff4ea 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass-card {
+  @apply border border-white bg-white shadow-[0_20px_60px_rgba(15,60,90,0.09)] backdrop-blur-xl;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.soft-panel {
+  @apply rounded-[30px] border border-sky-100 bg-white shadow-[0_16px_50px_rgba(0,62,102,0.08)];
+}
+
+.field-input {
+  @apply rounded-2xl border border-sky-100 bg-white px-4 py-3 text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-teal focus:ring-4 focus:ring-teal/15;
+}
+
+.hover-lift {
+  @apply transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,60,90,0.12)];
+}
+
+.nav-button {
+  @apply inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition duration-200;
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="page-shell">
+    <section class="section-heading compact">
+        <span class="eyebrow">Stays</span>
+        <h2>Resorts and hotels with room availability</h2>
+        <p class="section-copy">Browse brighter stay cards with room counts, ratings, guest capacity, and quick price visibility.</p>
+    </section>
+    <section class="resort-grid">
+        {% for resort in resorts %}
+        <article class="resort-card">
+            <img src="{{ resort.image }}" alt="{{ resort.name }}">
+            <div class="resort-copy">
+                <div class="resort-header">
+                    <div>
+                        <h3>{{ resort.name }}</h3>
+                        <p>{{ resort.city }} • {{ resort.type }}</p>
+                    </div>
+                    <strong>{{ resort.rating }}</strong>
+                </div>
+                <div class="resort-meta">
+                    <span>Rs. {{ resort.price_per_night }}/night</span>
+                    <span>{{ resort.rooms_available }} rooms left</span>
+                    <span>Up to {{ resort.max_guests_per_room }} guests/room</span>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,12 @@
+[
+  {"name":"Goa","region":"West Coast","tagline":"Beaches, sunset shacks, and easy resort stays.","best_for":"Beach escape","best_time":"Nov-Feb","image":"https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80"},
+  {"name":"Jaipur","region":"Rajasthan","tagline":"Palaces, culture, shopping, and heritage evenings.","best_for":"Culture","best_time":"Oct-Mar","image":"https://picsum.photos/seed/tripmate-jaipur/1200/800"},
+  {"name":"Manali","region":"Himachal Pradesh","tagline":"Cool weather, mountain views, and adventure sports.","best_for":"Hills","best_time":"Apr-Jun","image":"https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80"},
+  {"name":"Udaipur","region":"Rajasthan","tagline":"Lakefront stays and romantic palace scenes.","best_for":"Scenic","best_time":"Oct-Mar","image":"https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1200&q=80"},
+  {"name":"Kochi","region":"Kerala","tagline":"Coastal charm, art streets, and backwater access.","best_for":"Coastal culture","best_time":"Sep-Mar","image":"https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80"},
+  {"name":"Munnar","region":"Kerala","tagline":"Tea hills, misty mornings, and cozy retreats.","best_for":"Nature","best_time":"Sep-Mar","image":"https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1200&q=80"},
+  {"name":"Ooty","region":"Tamil Nadu","tagline":"Classic hill station with gardens and toy-train nostalgia.","best_for":"Relaxed hills","best_time":"Oct-Jun","image":"https://picsum.photos/seed/tripmate-ooty/1200/800"},
+  {"name":"Rishikesh","region":"Uttarakhand","tagline":"River views, cafes, yoga, and rafting plans.","best_for":"Adventure","best_time":"Oct-Apr","image":"https://picsum.photos/seed/tripmate-rishikesh/1200/800"},
+  {"name":"Pondicherry","region":"Tamil Nadu","tagline":"Colorful lanes, French cafes, and seaside calm.","best_for":"Cafe break","best_time":"Oct-Mar","image":"https://picsum.photos/seed/tripmate-pondicherry/1200/800"},
+  {"name":"Srinagar","region":"Kashmir","tagline":"Lake stays, gardens, and scenic mountain serenity.","best_for":"Luxury scenery","best_time":"Apr-Oct","image":"https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80"}
+]

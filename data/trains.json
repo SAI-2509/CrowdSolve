@@ -1,0 +1,12 @@
+[
+  {"origin":"Mumbai","destination":"Goa","name":"Tejas Express","price":1800,"duration_hours":10},
+  {"origin":"Delhi","destination":"Jaipur","name":"Ajmer Shatabdi","price":950,"duration_hours":4.5},
+  {"origin":"Delhi","destination":"Manali","name":"Himalaya Rail Link + Cab","price":2200,"duration_hours":8.5},
+  {"origin":"Ahmedabad","destination":"Udaipur","name":"Mewar Express","price":1100,"duration_hours":7},
+  {"origin":"Bengaluru","destination":"Kochi","name":"Island Express","price":980,"duration_hours":11},
+  {"origin":"Kochi","destination":"Munnar","name":"Hill Connector + Cab","price":1200,"duration_hours":5.5},
+  {"origin":"Chennai","destination":"Ooty","name":"Nilgiri Link + Toy Train","price":1400,"duration_hours":8},
+  {"origin":"Delhi","destination":"Rishikesh","name":"Yoga City Express","price":850,"duration_hours":5},
+  {"origin":"Chennai","destination":"Pondicherry","name":"Beachline Express","price":500,"duration_hours":3.5},
+  {"origin":"Jammu","destination":"Srinagar","name":"Kashmir Valley Link","price":850,"duration_hours":5.5}
+]

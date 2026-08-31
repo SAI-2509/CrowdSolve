@@ -1,0 +1,12 @@
+[
+  {"city":"Goa","partner":"Konkan Cab Co","price_per_km":18,"airport_service":true},
+  {"city":"Jaipur","partner":"PinkCity Rides","price_per_km":15,"airport_service":true},
+  {"city":"Manali","partner":"Peak Route Mobility","price_per_km":20,"airport_service":true},
+  {"city":"Udaipur","partner":"Lake City Drives","price_per_km":16,"airport_service":true},
+  {"city":"Kochi","partner":"Harbor Hop Cars","price_per_km":17,"airport_service":true},
+  {"city":"Munnar","partner":"Tea Trail Transfers","price_per_km":18,"airport_service":true},
+  {"city":"Ooty","partner":"Blue Hills Taxi","price_per_km":16,"airport_service":false},
+  {"city":"Rishikesh","partner":"Raft and Ride","price_per_km":15,"airport_service":true},
+  {"city":"Pondicherry","partner":"Bayfront Mobility","price_per_km":16,"airport_service":false},
+  {"city":"Srinagar","partner":"Dal Lake Cabs","price_per_km":18,"airport_service":true}
+]

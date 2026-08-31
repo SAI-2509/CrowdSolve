@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="page-shell auth-shell">
+    <section class="auth-layout">
+        <div class="auth-promo">
+            <span class="eyebrow">TripMate AI Access</span>
+            <h1>{{ "Create your account" if mode == "register" else "Welcome back" }}</h1>
+            <p>
+                Save trips, manage your favorite destinations, and unlock a more personal booking experience
+                across flights, stays, cabs, and local recommendations.
+            </p>
+            <div class="promo-points">
+                <article class="promo-chip">Smart offers for 20+ Indian cities</article>
+                <article class="promo-chip">Resort rooms and airport pickup planning</article>
+                <article class="promo-chip">Brighter Agoda-inspired booking flow</article>
+            </div>
+        </div>
+        <div class="auth-card">
+            <h2>{{ "Register" if mode == "register" else "Login" }}</h2>
+            <form method="post" class="auth-form">
+                {% if mode == "register" %}
+                <label>
+                    Full Name
+                    <input type="text" name="full_name" placeholder="Enter your name" required>
+                </label>
+                {% endif %}
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" placeholder="Minimum 6 characters" required>
+                </label>
+                {% if mode == "login" %}
+                <input type="hidden" name="next" value="{{ next or '' }}">
+                {% endif %}
+                <button type="submit" class="primary-btn auth-submit">{{ "Create account" if mode == "register" else "Login now" }}</button>
+            </form>
+            <p class="auth-switch">
+                {% if mode == "register" %}
+                Already registered? <a href="{{ url_for('auth.login') }}">Login here</a>
+                {% else %}
+                New to TripMate AI? <a href="{{ url_for('auth.register') }}">Create an account</a>
+                {% endif %}
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
