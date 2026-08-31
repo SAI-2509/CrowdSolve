@@ -1,7 +1,6 @@
-.venv/
-__pycache__/
-.streamlit/
-*.pyc
-instance/
-.DS_Store
-
+node_modules/
+dist/
+.env
+server/.env
+client/.env
+server/uploads/

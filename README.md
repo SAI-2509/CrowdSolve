@@ -1,41 +1,81 @@
-# TripMate_AI
+# CrowdSolve
 
-TripMate_AI is a travel planning starter project built with Flask and Streamlit. It combines flights, trains, hotels, resorts, cabs, airport pickup, restaurants, attractions, authentication, and personalized recommendations in one interactive website.
+CrowdSolve is a full-stack smart city platform that helps citizens report civic issues, lets communities upvote local problems, and helps authorities prioritize action using an AI-inspired urgency score.
 
-## What this starter includes
+## Stack
 
-- Flask web app with a brighter Agoda-inspired landing page, richer navigation, and interactive trip planner
-- User registration, login, logout, and session-aware navigation backed by SQLite
-- Multi-agent-inspired recommendation pipeline for deals, discovery, and mobility
-- Sample travel datasets covering 20 Indian cities that can later be replaced with Kaggle or live API sources
-- Streamlit companion app for prototyping and admin-style exploration
-- Mobile-friendly layout with clearer text contrast, brighter colors, photos, and smoother browsing
+- Frontend: React + Vite + Tailwind CSS
+- Backend: Node.js + Express
+- Database: MongoDB + Mongoose
+- Auth: JWT
+- Maps: Google Maps JavaScript API ready integration
 
-## Suggested next upgrades
+## Features
 
-- Add real booking APIs for flights, trains, hotels, and cabs
-- Add user accounts, saved itineraries, and booking history
-- Integrate an LLM for conversational planning and itinerary editing
-- Add price alerts, weather insights, and best-time-to-visit forecasts
-- Add map integration, payment flow, and partner onboarding
+- Citizen and authority signup/login
+- Home-zone based localized civic feed
+- Issue reporting with media URL or file upload support
+- Upvotes, comments, status tracking, and threshold-based authority flagging
+- AI urgency score using votes, category weight, and time elapsed
+- Authority dashboard with heatmap-ready location data and ranked issue queue
+- Smart City design system using teal, navy, and accent orange
 
-## Run locally
-
-1. Create a virtual environment.
-2. Install dependencies with `pip install -r requirements.txt`.
-3. Start the Flask site with `python app.py`.
-4. Start the Streamlit companion app with `streamlit run streamlit_app.py`.
-
-## Project structure
+## Project Structure
 
 ```text
-TripMate_AI/
-  app.py
-  config.py
-  streamlit_app.py
-  data/
-  tripmate_ai/
-    services/
-    static/
-    templates/
+CrowdSolve/
+  client/   # React frontend
+  server/   # Express API
 ```
+
+## Quick Start
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Copy the env templates:
+
+   ```bash
+   copy server\\.env.example server\\.env
+   copy client\\.env.example client\\.env
+   ```
+
+3. Start both apps:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open:
+
+- Frontend: `http://localhost:5173`
+- API: `http://localhost:5000/api`
+
+## Environment Variables
+
+### Server
+
+- `PORT`
+- `MONGODB_URI`
+- `JWT_SECRET`
+- `CLIENT_URL`
+- `UPLOADS_BASE_URL`
+- `AUTHORITY_THRESHOLD_VOTES`
+
+### Client
+
+- `VITE_API_URL`
+- `VITE_GOOGLE_MAPS_API_KEY`
+
+## AI Urgency Scoring
+
+CrowdSolve computes a score using:
+
+```text
+Score = (Votes * 0.4) + (CategoryWeight * 0.4) + (TimeElapsed * 0.2)
+```
+
+The backend normalizes time into a capped age score so unresolved, high-impact issues naturally rise in priority.
